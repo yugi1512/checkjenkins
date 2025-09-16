@@ -9,7 +9,7 @@ pipeline {
 
         stage('hello') {
             steps {
-                bat 'python demo.py'
+                bat 'python demo.py %x_value% %y_value%'
             }
         }
     }
